@@ -1,4 +1,16 @@
-package;
+package source;
+
+class Main extends hxd.App {
+    override function init() {
+        var tf = new h2d.Text(hxd.res.DefaultFont.get(), s2d);
+        tf.text = "Hello World !";
+    }
+    static function main() {
+        new Main();
+    }
+}
+
+/* package;
 
 import flixel.FlxGame;
 import flixel.FlxState;
@@ -73,4 +85,4 @@ class Main extends Sprite
 		addChild(new FPS(10, 3, 0xFFFFFF));
 		#end
 	}
-}
+} */
